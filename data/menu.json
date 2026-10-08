@@ -1,0 +1,32 @@
+{
+    "101": {
+        "item_name": "Paneer Tikka",
+        "category": "Starter",
+        "price": 250
+    },
+    "102": {
+        "item_name": "Burger",
+        "category": "Fast Food",
+        "price": 180
+    },
+    "103": {
+        "item_name": "French Fries",
+        "category": "Fast Food",
+        "price": 120
+    },
+    "104": {
+        "item_name": "Butter Naan",
+        "category": "Bread",
+        "price": 60
+    },
+    "105": {
+        "item_name": "Chicken Biryani",
+        "category": "Main Course",
+        "price": 280
+    },
+    "106": {
+        "item_name": "Coke",
+        "category": "Beverage",
+        "price": 50
+    }
+}
