@@ -11,6 +11,17 @@ result = menu_service.find_menu_item(menu_data, item_name)
 if result is None:
     print("Item not found")
 else:
-    print("Item:", result["item_name"])
-    print("Category:", result["category"])
-    print("Price:", result["price"])
+    quantity = input("Enter quantity: ")
+    amount = float(result["price"]) * int(quantity)
+    order = {
+        "item_name": result["item_name"],
+        "price": result["price"],
+        "quantity": quantity,
+        "amount": amount
+    }
+
+    print("Order details:")
+    print(f"Item Name: {order['item_name']}")
+    print(f"Price: {order['price']}")
+    print(f"Quantity: {order['quantity']}")
+    print(f"Amount: {order['amount']}")
