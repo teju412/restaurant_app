@@ -6,6 +6,13 @@ with open("data/menu.json", "r") as f:
 
 orders = []
 total_amount = 0
+print("===== Welcome to Our Restaurant =====")
+print("===== Menu =====")
+
+for menu_item in menu_data.values():
+    print(f"{menu_item['item_name']} - Price: ₹{menu_item['price']}")
+
+print("Type 'exit' to finish your order.")
 
 while True:
     item_name = input("Enter item name: ").lower().strip()
@@ -20,9 +27,9 @@ while True:
     # print(result)
 
     if result is None:
-        print("Item not found.Please choose an item from the menu.")
+        print("Item not found. Please choose an item from the menu.")
         for menu_item in menu_data.values():
-            print(f"{menu_item['item_name']} - Price: {menu_item['price']}")
+            print(f"{menu_item['item_name']} - Price: ₹{menu_item['price']}")
     else:
         while True:
             try:
