@@ -14,11 +14,21 @@ while True:
         break
 
     result = menu_service.find_menu_item(menu_data, item_name)
+    # print(result)
 
     if result is None:
         print("Item not found")
     else:
-        quantity = int(input("Enter quantity: "))
+        while True:
+            try:
+                quantity = int(input("Enter quantity: "))
+            except ValueError:
+                print("Invalid quantity. Please enter a valid number.")
+                continue
+            if quantity <= 0:
+                print("Quantity must be greater than zero.")
+                continue
+            break
         item_exists = False
         for order in orders:
             if order["item_name"] == result["item_name"]:
