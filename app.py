@@ -19,21 +19,29 @@ while True:
         print("Item not found")
     else:
         quantity = int(input("Enter quantity: "))
-
-        amount = result["price"] * quantity
-        total_amount += amount
-
-        order = {
-            "item_name": result["item_name"],
-            "price": result["price"],
-            "quantity": quantity,
-            "amount": amount,
-           
-        }
-
-        orders.append(order)
-
-print(orders)
+        item_exists = False
+        for order in orders:
+            if order["item_name"] == result["item_name"]:
+                order["quantity"] += quantity
+                order["amount"] = order["price"] * order["quantity"]
+                item_exists = True
+                break
+        if not item_exists:
+            # Create the order dictionary
+            order = {
+                "item_name": result["item_name"],
+                "price": result["price"],
+                "quantity": quantity,
+                "amount": result["price"] * quantity
+            }
+            # Append it to orders
+            orders.append(order)
+print("Order Summary:")
 for order in orders:
-    print(f"Item Name: {order['item_name']}, Price: {order['price']}, Quantity: {order['quantity']}, Amount: {order['amount']}")
-print(f"Total Amount: {total_amount}")   
+    print(f"{order['item_name']} - Quantity: {order['quantity']}, Amount: {order['amount']}")
+    total_amount += order["amount"]
+print(f"Total Amount: {total_amount}")
+        
+
+
+       
