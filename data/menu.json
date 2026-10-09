@@ -1,32 +1,253 @@
+
 {
-    "101": {
-        "item_name": "Paneer Tikka",
-        "category": "Starter",
-        "price": 250
-    },
-    "102": {
-        "item_name": "Burger",
-        "category": "Fast Food",
-        "price": 180
-    },
-    "103": {
-        "item_name": "French Fries",
-        "category": "Fast Food",
-        "price": 120
-    },
-    "104": {
-        "item_name": "Butter Naan",
-        "category": "Bread",
-        "price": 60
-    },
-    "105": {
-        "item_name": "Chicken Biryani",
-        "category": "Main Course",
-        "price": 280
-    },
-    "106": {
-        "item_name": "Coke",
-        "category": "Beverage",
-        "price": 50
-    }
+  "101": {
+    "item_name": "Paneer Tikka",
+    "category": "Starter",
+    "price": 250
+  },
+  "102": {
+    "item_name": "Chicken Tikka",
+    "category": "Starter",
+    "price": 280
+  },
+  "103": {
+    "item_name": "Veg Manchurian",
+    "category": "Starter",
+    "price": 180
+  },
+  "104": {
+    "item_name": "Gobi Manchurian",
+    "category": "Starter",
+    "price": 170
+  },
+  "105": {
+    "item_name": "Chilli Paneer",
+    "category": "Starter",
+    "price": 230
+  },
+  "106": {
+    "item_name": "Chicken 65",
+    "category": "Starter",
+    "price": 240
+  },
+  "107": {
+    "item_name": "Crispy Corn",
+    "category": "Starter",
+    "price": 190
+  },
+  "108": {
+    "item_name": "Hara Bhara Kebab",
+    "category": "Starter",
+    "price": 200
+  },
+  "109": {
+    "item_name": "Chicken Lollipop",
+    "category": "Starter",
+    "price": 260
+  },
+  "110": {
+    "item_name": "Apollo Fish",
+    "category": "Starter",
+    "price": 300
+  },
+  "111": {
+    "item_name": "Samosa",
+    "category": "Snacks",
+    "price": 30
+  },
+  "112": {
+    "item_name": "Veg Puff",
+    "category": "Snacks",
+    "price": 25
+  },
+  "113": {
+    "item_name": "Onion Pakoda",
+    "category": "Snacks",
+    "price": 80
+  },
+  "114": {
+    "item_name": "Mirchi Bajji",
+    "category": "Snacks",
+    "price": 60
+  },
+  "115": {
+    "item_name": "Masala Vada",
+    "category": "Snacks",
+    "price": 50
+  },
+  "116": {
+    "item_name": "French Fries",
+    "category": "Fast Food",
+    "price": 120
+  },
+  "117": {
+    "item_name": "Veg Burger",
+    "category": "Fast Food",
+    "price": 150
+  },
+  "118": {
+    "item_name": "Chicken Burger",
+    "category": "Fast Food",
+    "price": 200
+  },
+  "119": {
+    "item_name": "Veg Pizza",
+    "category": "Fast Food",
+    "price": 220
+  },
+  "120": {
+    "item_name": "Chicken Pizza",
+    "category": "Fast Food",
+    "price": 280
+  },
+  "121": {
+    "item_name": "Veg Sandwich",
+    "category": "Fast Food",
+    "price": 100
+  },
+  "122": {
+    "item_name": "Grilled Chicken Sandwich",
+    "category": "Fast Food",
+    "price": 180
+  },
+  "123": {
+    "item_name": "Paneer Wrap",
+    "category": "Fast Food",
+    "price": 160
+  },
+  "124": {
+    "item_name": "Chicken Wrap",
+    "category": "Fast Food",
+    "price": 190
+  },
+  "125": {
+    "item_name": "Chicken Biryani",
+    "category": "Main Course",
+    "price": 280
+  },
+  "126": {
+    "item_name": "Mutton Biryani",
+    "category": "Main Course",
+    "price": 350
+  },
+  "127": {
+    "item_name": "Veg Biryani",
+    "category": "Main Course",
+    "price": 220
+  },
+  "128": {
+    "item_name": "Paneer Butter Masala",
+    "category": "Main Course",
+    "price": 260
+  },
+  "129": {
+    "item_name": "Butter Chicken",
+    "category": "Main Course",
+    "price": 320
+  },
+  "130": {
+    "item_name": "Chicken Curry",
+    "category": "Main Course",
+    "price": 280
+  },
+  "131": {
+    "item_name": "Dal Tadka",
+    "category": "Main Course",
+    "price": 180
+  },
+  "132": {
+    "item_name": "Palak Paneer",
+    "category": "Main Course",
+    "price": 230
+  },
+  "133": {
+    "item_name": "Chole Masala",
+    "category": "Main Course",
+    "price": 190
+  },
+  "134": {
+    "item_name": "Veg Fried Rice",
+    "category": "Rice",
+    "price": 180
+  },
+  "135": {
+    "item_name": "Chicken Fried Rice",
+    "category": "Rice",
+    "price": 220
+  },
+  "136": {
+    "item_name": "Jeera Rice",
+    "category": "Rice",
+    "price": 140
+  },
+  "137": {
+    "item_name": "Steamed Rice",
+    "category": "Rice",
+    "price": 100
+  },
+  "138": {
+    "item_name": "Butter Naan",
+    "category": "Bread",
+    "price": 60
+  },
+  "139": {
+    "item_name": "Plain Naan",
+    "category": "Bread",
+    "price": 45
+  },
+  "140": {
+    "item_name": "Garlic Naan",
+    "category": "Bread",
+    "price": 70
+  },
+  "141": {
+    "item_name": "Tandoori Roti",
+    "category": "Bread",
+    "price": 30
+  },
+  "142": {
+    "item_name": "Chapati",
+    "category": "Bread",
+    "price": 20
+  },
+  "143": {
+    "item_name": "Gulab Jamun",
+    "category": "Desserts",
+    "price": 80
+  },
+  "144": {
+    "item_name": "Double Ka Meetha",
+    "category": "Desserts",
+    "price": 100
+  },
+  "145": {
+    "item_name": "Chocolate Brownie",
+    "category": "Desserts",
+    "price": 120
+  },
+  "146": {
+    "item_name": "Vanilla Ice Cream",
+    "category": "Desserts",
+    "price": 80
+  },
+  "147": {
+    "item_name": "Coke",
+    "category": "Beverage",
+    "price": 50
+  },
+  "148": {
+    "item_name": "Fresh Lime Soda",
+    "category": "Beverage",
+    "price": 70
+  },
+  "149": {
+    "item_name": "Mango Lassi",
+    "category": "Beverage",
+    "price": 90
+  },
+  "150": {
+    "item_name": "Mineral Water",
+    "category": "Beverage",
+    "price": 30
+  }
 }

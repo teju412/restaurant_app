@@ -14,26 +14,27 @@ for category in categories:
     print(f"\n--- {category} ---")
     for menu_id, menu_item in menu_data.items():
         if menu_item["category"] == category:
-            print(f"{menu_item['item_name']} - Price: ₹{menu_item['price']}")
+            print(f"{menu_id}.{menu_item['item_name']} - Price: ₹{menu_item['price']}")
 
 print("Type 'exit' to finish your order.")
 
 while True:
-    item_name = input("Enter item name: ").lower().strip()
+    menu_id = input("Enter item ID: ").strip()
 
-    if item_name == "exit":
+    if menu_id == "exit":
         break
-    if item_name == "":
-        print("Please enter an item name.")
+    if menu_id == "":
+        print("Please enter an item ID.")
         continue
 
-    result = menu_service.find_menu_item(menu_data, item_name)
+    result = menu_data.get(menu_id)
+    # result = menu_service.find_menu_item(menu_data, menu_id)
     # print(result)
 
     if result is None:
         print("Item not found. Please choose an item from the menu.")
-        for menu_item in menu_data.values():
-            print(f"{menu_item['item_name']} - Price: ₹{menu_item['price']}")
+        for menu_id, menu_item in menu_data.items():
+            print(f"{menu_id}. {menu_item['item_name']} - Price: ₹{menu_item['price']}")
     else:
         while True:
             try:
