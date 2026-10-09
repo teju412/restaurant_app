@@ -20,12 +20,15 @@ while True:
     # print(result)
 
     if result is None:
-        print(" Please choose an item from the menu.")
+        print("Item not found.Please choose an item from the menu.")
+        for menu_item in menu_data.values():
+            print(f"{menu_item['item_name']} - Price: {menu_item['price']}")
     else:
         while True:
             try:
                 quantity = int(input("Enter quantity: "))
             except ValueError:
+
                 print("Invalid quantity. Please enter a valid number.")
                 continue
             if quantity <= 0:
