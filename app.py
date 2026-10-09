@@ -8,9 +8,13 @@ orders = []
 total_amount = 0
 print("===== Welcome to Our Restaurant =====")
 print("===== Menu =====")
+categories = ["Starter", "Fast Food", "Main Course", "Bread", "Beverage"]
 
-for menu_item in menu_data.values():
-    print(f"{menu_item['item_name']} - Price: ₹{menu_item['price']}")
+for category in categories:
+    print(f"\n--- {category} ---")
+    for menu_id, menu_item in menu_data.items():
+        if menu_item["category"] == category:
+            print(f"{menu_item['item_name']} - Price: ₹{menu_item['price']}")
 
 print("Type 'exit' to finish your order.")
 
