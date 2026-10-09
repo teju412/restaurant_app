@@ -12,12 +12,15 @@ while True:
 
     if item_name == "exit":
         break
+    if item_name == "":
+        print("Please enter an item name.")
+        continue
 
     result = menu_service.find_menu_item(menu_data, item_name)
     # print(result)
 
     if result is None:
-        print("Item not found")
+        print(" Please choose an item from the menu.")
     else:
         while True:
             try:
